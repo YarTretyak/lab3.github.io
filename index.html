@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app = 'MsgApp'>
+<head>
+    <meta charset="UTF-8">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Лаб №3</title>
+</head>
+<body>
+<div ng-controller="MsgController">
+    <label>Введіть що ви хочете на сніданок: </label>
+    <input type="text" ng-model="listOfProducts">
+    <div class="answer">{{answer}}</div>
+    <button ng-click="showAnswer()">Чи не забагато?</button>
+</div>
+</body>
+</html>
